@@ -1,5 +1,5 @@
 baseURL: https://blog.devws.cn
-languageCode: zh-cn
+languageCode: zh
 paginate: 5
 theme: PaperMod
 
@@ -51,10 +51,10 @@ params:
     # apple_touch_icon: "<link / abs url>"
     # safari_pinned_tab: "<link / abs url>"
 
-  label:
-    text: "Home"
-    icon: /favicon-32x32.jpg
-    iconHeight: 35
+  # label:
+  #   text: "Home"
+  #   icon: /favicon-32x32.jpg
+  #   iconHeight: 35
 
   # profile-mode
   profileMode:
@@ -77,11 +77,10 @@ params:
     Content: Welcome to my blog
 
   socialIcons:
-    - name: stackoverflow
-      url: "https://stackoverflow.com/users/7726468/ws"
     - name: github
       url: "https://github.com/wswind"
-
+    - name: stackoverflow
+      url: "https://stackoverflow.com/users/7726468/ws"
   # analytics:
   #   google:
   #     SiteVerificationTag: "XYZabc"
@@ -96,8 +95,8 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/wswind/wswind.github.io"
-    Text: "Edit" # edit text
+    URL: "https://github.com/wswind/wswind.github.io/edit/main/content"
+    Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
   # for search
