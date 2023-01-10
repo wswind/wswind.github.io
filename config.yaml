@@ -1,5 +1,5 @@
 baseURL: https://wswind.github.io
-languageCode: zh
+languageCode: zh-CN
 paginate: 5
 theme: PaperMod
 
