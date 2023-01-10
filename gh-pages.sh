@@ -1,5 +1,4 @@
 #!/usr/bin/bash
-
 hugo
 cd public
 git init -b gh-pages

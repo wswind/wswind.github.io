@@ -1,4 +1,4 @@
-baseURL: https://blog.devws.cn
+baseURL: https://wswind.github.io
 languageCode: zh
 paginate: 5
 theme: PaperMod
@@ -119,9 +119,9 @@ menu:
       name: tags
       url: /tags/
       weight: 20
-    - identifier: blog.devws.cn
-      name: blog.devws.cn
-      url: https://blog.devws.cn
+    - identifier: wswind.github.io
+      name: wswind.github.io
+      url: https://wswind.github.io
       weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
