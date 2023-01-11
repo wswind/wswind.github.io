@@ -2,11 +2,7 @@ baseURL: https://blog.devws.cn
 languageCode: zh-cn
 paginate: 5
 theme: PaperMod
-
-defaultContentLanguage: "zh"
-defaultContentLanguageInSubdir: false
 hasCJKLanguage: true
-
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
@@ -18,19 +14,19 @@ minify:
   disableXML: true
   minifyOutput: true
 
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
 languages:
-    zh:
-        languageName: "中文"
-        weight: 1
-        editPost:
-          Text: "建议修改"
+    en:
+        languageName: "English"
+        weight: 10
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: Dev Blog by Ws
-  description: "Dev Blog by Ws"
+  title: "Dev-blog by WS"
+  description: "A Developer Blog Written by WS"
   keywords: ["Blog", "Development"]
-  author: 王帅
+  author: WS
   # author: ["Me", "You"] # multiple authors
   # images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
@@ -59,13 +55,13 @@ params:
     favicon: "/favicon-32x32.jpg"
     favicon16x16: "/favicon-16x16.jpg"
     favicon32x32: "/favicon-32x32.jpg"
-    # apple_touch_icon: "<link / abs url>"
-    # safari_pinned_tab: "<link / abs url>"
+    apple_touch_icon: "/favicon-32x32.jpg"
+    safari_pinned_tab: "/favicon-32x32.jpg"
 
-  # label:
-  #   text: "Home"
-  #   icon: /favicon-32x32.jpg
-  #   iconHeight: 35
+  label:
+    text: "Home"
+    icon: "/favicon-32x32.jpg"
+    iconHeight: 35
 
   # profile-mode
   profileMode:
@@ -85,7 +81,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Content: Welcome to Dev-blog by WS
 
   socialIcons:
     - name: github
@@ -107,6 +103,7 @@ params:
 
   editPost:
     URL: "https://github.com/wswind/wswind.github.io/edit/main/content"
+    Text: "ChangeIt"
     appendFilePath: true # to append file path to Edit link
     
   # for search
