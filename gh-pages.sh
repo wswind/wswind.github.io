@@ -1,6 +1,7 @@
 #!/usr/bin/bash
 hugo
 cd public
+echo "blog.devws.cn" > CNAME
 git init -b gh-pages
 git remote add origin https://github.com/wswind/wswind.github.io
 git add .
