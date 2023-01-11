@@ -23,17 +23,14 @@ languages:
         languageName: "中文"
         weight: 1
         editPost:
-          URL: "https://github.com/wswind/wswind.github.io/edit/main/content"
-          Text: "建议修改" # edit text
-          appendFilePath: true # to append file path to Edit link
-
+          Text: "建议修改"
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Dev Blog by Ws
   description: "Dev Blog by Ws"
   keywords: ["Blog", "Development"]
-  author: Vincent Wang
+  author: 王帅
   # author: ["Me", "You"] # multiple authors
   # images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
@@ -108,6 +105,10 @@ params:
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
 
+  editPost:
+    URL: "https://github.com/wswind/wswind.github.io/edit/main/content"
+    appendFilePath: true # to append file path to Edit link
+    
   # for search
   # https://fusejs.io/api/options.html
   fuseOpts:
