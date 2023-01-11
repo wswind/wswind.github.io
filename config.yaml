@@ -1,4 +1,4 @@
-baseURL: blog.devws.cn 
+baseURL: https://blog.devws.cn
 languageCode: zh-cn
 paginate: 5
 theme: PaperMod
@@ -13,6 +13,20 @@ buildExpired: false
 minify:
   disableXML: true
   minifyOutput: true
+
+hasCJKLanguage: true
+defaultContentLanguage: "zh"
+defaultContentLanguageInSubdir: false
+
+languages:
+    zh:
+        languageName: "中文"
+        weight: 1
+        editPost:
+          URL: "https://github.com/wswind/wswind.github.io/edit/main/content"
+          Text: "建议修改" # edit text
+          appendFilePath: true # to append file path to Edit link
+
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
@@ -94,11 +108,6 @@ params:
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
 
-  editPost:
-    URL: "https://github.com/wswind/wswind.github.io/edit/main/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
-
   # for search
   # https://fusejs.io/api/options.html
   fuseOpts:
@@ -121,7 +130,7 @@ menu:
       weight: 20
     - identifier: home
       name: home
-      url: blog.devws.cn
+      url: https://blog.devws.cn
       weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
