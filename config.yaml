@@ -3,6 +3,10 @@ languageCode: zh-cn
 paginate: 5
 theme: PaperMod
 
+defaultContentLanguage: "zh"
+defaultContentLanguageInSubdir: false
+hasCJKLanguage: true
+
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
@@ -13,10 +17,6 @@ buildExpired: false
 minify:
   disableXML: true
   minifyOutput: true
-
-hasCJKLanguage: true
-defaultContentLanguage: "zh"
-defaultContentLanguageInSubdir: false
 
 languages:
     zh:
@@ -47,7 +47,7 @@ params:
   UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
-  comments: true
+  comments: false
   hidemeta: false
   hideSummary: false
   showtoc: false
