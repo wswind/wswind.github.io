@@ -1,2 +1,2 @@
 # wswind.github.io
-My Blog
+My Blog: <https://wswind.github.io>
