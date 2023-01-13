@@ -81,8 +81,8 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to Dev-blog by WS
+    Title: Dev-blog by WS
+    Content: To Share With Developers
 
   socialIcons:
     - name: github
