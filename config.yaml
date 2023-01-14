@@ -1,5 +1,5 @@
 baseURL: https://wswind.github.io
-languageCode: zh-cn
+languageCode: zh
 paginate: 5
 theme: PaperMod
 hasCJKLanguage: true
@@ -15,11 +15,11 @@ minify:
   disableXML: true
   minifyOutput: true
 
-defaultContentLanguage: en
+defaultContentLanguage: zh
 defaultContentLanguageInSubdir: false
 languages:
-    en:
-        languageName: "English"
+    zh:
+        languageName: "中文"
         weight: 10
 
 params:
@@ -53,15 +53,15 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "/favicon-32x32.jpg"
-    favicon16x16: "/favicon-16x16.jpg"
-    favicon32x32: "/favicon-32x32.jpg"
-    apple_touch_icon: "/favicon-32x32.jpg"
-    safari_pinned_tab: "/favicon-32x32.jpg"
+    favicon: "/favicon32.jpg"
+    favicon16x16: "/favicon16.jpg"
+    favicon32x32: "/favicon32.jpg"
+    apple_touch_icon: "/favicon32.jpg"
+    safari_pinned_tab: "/favicon32.jpg"
 
   label:
     text: "Home"
-    icon: "/favicon-32x32.jpg"
+    icon: "/favicon32.jpg"
     iconHeight: 35
 
   # profile-mode
