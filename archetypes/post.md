@@ -5,7 +5,7 @@ date: 2020-09-15T11:30:03+00:00
 # aliases: ["/first"]
 tags: ["first"]
 categories: ["dev"]
-author: "Vincent Wang"
+author: "WS"
 # author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false

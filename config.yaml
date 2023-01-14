@@ -1,4 +1,5 @@
 baseURL: https://wswind.github.io
+title: "Dev-blog by WS"
 languageCode: zh
 paginate: 5
 theme: PaperMod

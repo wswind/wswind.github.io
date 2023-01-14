@@ -5,13 +5,13 @@ date: 2023-1-11T00:11:00+08:00
 # aliases: ["/first"]
 tags: ["first"]
 categories: ["dev"]
-author: "Vincent Wang"
+author: "WS"
 # author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
 draft: false
 hidemeta: false
-description: "Desc Text."
+#description: "Desc Text."
 # canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: false
