@@ -130,7 +130,7 @@ menu:
       weight: 20
     - identifier: home
       name: Home
-      url: https://wswid.github.io
+      url: https://wswind.github.io
       weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
