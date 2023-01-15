@@ -36,7 +36,6 @@
   {{- end }}
 
   <footer class="post-footer">
-    {{- partial "licence.html" . -}}
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
     <ul class="post-tags">
       {{- range ($.GetTerms $tags) }}
@@ -49,6 +48,7 @@
     {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
     {{- partial "share_icons.html" . -}}
     {{- end }}
+    {{- partial "licence.html" . -}}
   </footer>
 
   {{- if (.Param "comments") }}
