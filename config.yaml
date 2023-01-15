@@ -1,8 +1,9 @@
 baseURL: https://wswind.github.io
 title: "Dev-blog by WS"
-languageCode: zh
 paginate: 5
 theme: PaperMod
+
+
 hasCJKLanguage: true
 enableRobotsTXT: true
 buildDrafts: false
@@ -34,6 +35,7 @@ params:
   DateFormat: "January 2, 2006"
   defaultTheme: light  # auto, dark, light
   disableThemeToggle: false
+  CopyrightStartYear: "2022"
 
   ShowReadingTime: true
   ShowShareButtons: false
@@ -90,6 +92,8 @@ params:
       url: "https://github.com/wswind"
     - name: stackoverflow
       url: "https://stackoverflow.com/users/7726468/ws"
+    - name: Rss
+      url: "index.xml"
   # analytics:
   #   google:
   #     SiteVerificationTag: "XYZabc"
@@ -105,7 +109,7 @@ params:
 
   editPost:
     URL: "https://github.com/wswind/wswind.github.io/edit/main/content"
-    Text: "ChangeIt"
+    #Text: ""
     appendFilePath: true # to append file path to Edit link
     
   # for search
