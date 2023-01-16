@@ -1,5 +1,5 @@
 baseURL: https://wswind.github.io
-title: "Dev-blog by WS"
+title: "wswind.github.io"
 paginate: 5
 theme: PaperMod
 
@@ -17,17 +17,16 @@ minify:
   disableXML: true
   minifyOutput: true
 
-defaultContentLanguage: zh
+defaultContentLanguage: en 
 defaultContentLanguageInSubdir: false
 languages:
-    zh:
-        languageName: "中文"
+    en:
+        languageName: "English"
         weight: 10
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: "Dev-blog by WS"
-  description: "A Developer Blog Written by WS"
+  #description: ""
   keywords: ["Blog", "Development"]
   author: WS
   # author: ["Me", "You"] # multiple authors
@@ -84,8 +83,8 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: Dev-blog by WS
-    Content: To Share With Developers
+    Title: wswind.github.io
+    Content: Share With Developers
 
   socialIcons:
     - name: github
