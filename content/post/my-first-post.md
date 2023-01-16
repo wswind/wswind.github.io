@@ -5,35 +5,29 @@ date: 2023-1-11T00:11:00+08:00
 # aliases: ["/first"]
 tags: ["first"]
 categories: ["dev"]
-author: "WS"
-# author: ["Me", "You"] # multiple authors
+# author: "WS"
 showToc: true
 TocOpen: false
 draft: false
+searchHidden: false
 hidemeta: false
-#description: "Desc Text."
+# description: "Desc Text."
 # canonicalURL: "https://canonical.url/to/page"
-disableHLJS: true # to disable highlightjs
-disableShare: false
-disableHLJS: false
-hideSummary: false
-searchHidden: true
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-UseHugoToc: true
+# disableHLJS: false # to disable highlightjs
+# disableShare: false
+# hideSummary: false
+# ShowReadingTime: true
+# ShowBreadCrumbs: true
+# ShowPostNavLinks: true
+# ShowWordCount: true
+# ShowRssButtonInSectionTermList: true
+# UseHugoToc: true
 # cover:
 #     image: "<image path/url>" # image path/url
 #     alt: "<alt text>" # alt text
 #     caption: "<text>" # display caption under cover
 #     relative: false # when using page bundles set this to true
 #     hidden: true # only hide on current single page
-# editPost:
-#     URL: "https://github.com/<path_to_repo>/content"
-#     Text: "Suggest Changes" # edit text
-#     appendFilePath: true # to append file path to Edit link
 ---
 
 hello this is hugo
