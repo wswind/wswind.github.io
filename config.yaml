@@ -18,11 +18,14 @@ minify:
   minifyOutput: true
 
 defaultContentLanguage: en 
-defaultContentLanguageInSubdir: false
+defaultContentLanguageInSubdir: true
 languages:
+    zh:
+        languageName: "Chinese"
+        weight: 10
     en:
         languageName: "English"
-        weight: 10
+        weight: 20
 outputs:
     home:
         - HTML
@@ -88,7 +91,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: wswind.github.io
-    Content: Share With Developers
+    Content: To Share With Developers
 
   socialIcons:
     - name: github
@@ -139,10 +142,6 @@ menu:
       name: Search
       url: search/
       weight: 30
-    - identifier: home
-      name: wswind.github.io
-      url: https://wswind.github.io
-      weight: 40
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
