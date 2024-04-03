@@ -34,9 +34,6 @@ languages:
         - name: Tags
           url: tags/
           weight: 15
-  en:
-    weight: 2
-    contentDir: content/en
 
 taxonomies:
   category: categories
@@ -84,7 +81,7 @@ params:
   #       url: tags
 
   homeInfoParams:
-    Title: "Dev-blog by WS"
+    Title: "Dev Blog by WS"
     Content: "Find your passion."
 
   socialIcons:
