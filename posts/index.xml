@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>文章 on WS Devblog</title>
+    <link>https://wswind.github.io/posts/</link>
+    <description>Recent content in 文章 on WS Devblog</description>
+    <generator>Hugo -- 0.157.0</generator>
+    <language>zh</language>
+    <lastBuildDate>Sat, 25 Mar 2023 09:45:00 +0800</lastBuildDate>
+    <atom:link href="https://wswind.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ArchLinux 启用 Secure Boot 的最简单方法 —— sbctl</title>
+      <link>https://wswind.github.io/posts/archlinux-secure-boot/</link>
+      <pubDate>Sat, 25 Mar 2023 09:45:00 +0800</pubDate>
+      <guid>https://wswind.github.io/posts/archlinux-secure-boot/</guid>
+      <description>&lt;h2 id=&#34;配置背景&#34;&gt;配置背景&lt;/h2&gt;
+&lt;p&gt;最近在我的 Thinkpad 上装了 Windows 11 + Archlinux 双系统。想要开启下 Secure Boot。&lt;/p&gt;
+&lt;p&gt;其实不开启 Secure Boot 双系统运行也正常。目前 Windows 11 仅在安装阶段要求 Secure Boot，安装完成后可以关闭。不过由于 WSA 以及部分游戏的反作弊模块会校验 Secure Boot。为了不影响 Windows 功能，最终决定开启它。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>WSL2 安装 ArchLinux —— In The Arch Way</title>
+      <link>https://wswind.github.io/posts/wsl2-archlinux/</link>
+      <pubDate>Mon, 13 Mar 2023 22:56:00 +0800</pubDate>
+      <guid>https://wswind.github.io/posts/wsl2-archlinux/</guid>
+      <description>&lt;h2 id=&#34;the-arch-way&#34;&gt;The Arch Way&lt;/h2&gt;
+&lt;p&gt;Arch 的核心原则是 KISS(Keep It Simple Stupid)。这让它和 Ubuntu , RedHat 有着显著的区别。后者会考虑到开箱即用，而Arch不会，Arch会尽可能的保持和上游一致，而只做最小范围的更改。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>win10 升级至 win11 跳过TPM限制 （保留应用和数据）</title>
+      <link>https://wswind.github.io/posts/win10-upgrade-win11-skip-tpm/</link>
+      <pubDate>Thu, 29 Sep 2022 10:38:00 +0800</pubDate>
+      <guid>https://wswind.github.io/posts/win10-upgrade-win11-skip-tpm/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;系统升级有风险，请记得提前备份重要数据。&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;下载 win11的Media Creation Tool下载系统镜像：
+a) 打开 &lt;a href=&#34;https://www.microsoft.com/zh-cn/software-download/windows11/&#34;&gt;https://www.microsoft.com/zh-cn/software-download/windows11/&lt;/a&gt;
+b) 点击 创建 Windows 11 安装 &amp;ndash;&amp;gt; 立即下载
+c) 使用 mediacreationtool 创建当前系统版本对应的 ISO&lt;/li&gt;
+&lt;li&gt;运行 Skip_TPM_Check_on_Dynamic_Update.cmd 脚本:
+&lt;a href=&#34;https://github.com/AveYo/MediaCreationTool.bat/blob/main/bypass11/Skip_TPM_Check_on_Dynamic_Update.cmd&#34;&gt;https://github.com/AveYo/MediaCreationTool.bat/blob/main/bypass11/Skip_TPM_Check_on_Dynamic_Update.cmd&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;挂载Windows.iso安装Windows11，安装进程将不会因为检查TPM不通过而被中断。可选择保留应用和数据选项，实现升级。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;PS:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>.Net Core AOP 使用 Autofac 异步拦截器</title>
+      <link>https://wswind.github.io/posts/autofac-asyncinterceptor/</link>
+      <pubDate>Fri, 23 Oct 2020 11:19:00 +0800</pubDate>
+      <guid>https://wswind.github.io/posts/autofac-asyncinterceptor/</guid>
+      <description>&lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;
+&lt;p&gt;autofac使用拦截器实现AOP,是基于Castle.Core的.然而Castle.Core并未提供原生异步支持.所以需要使用帮助类实现,&lt;a href=&#34;https://autofaccn.readthedocs.io/en/latest/advanced/interceptors.html#asynchronous-method-interception&#34;&gt;这在autofac官方文档的已知问题中有详细说明&lt;/a&gt;。
+对于该问题的讨论,最早出现于&lt;a href=&#34;https://stackoverflow.com/questions/28099669/intercept-async-method-that-returns-generic-task-via-dynamicproxy&#34;&gt;stackoverflow&lt;/a&gt;
+James Skimming基于其中的一个答案,研发了一个帮助包即: &lt;a href=&#34;https://github.com/JSkimming/Castle.Core.AsyncInterceptor&#34;&gt;Castle.Core.AsyncInterceptor&lt;/a&gt;
+我之前也一直使用的是该方案,不过thepirat000随后提出了一个使用dynamic的更加简化的&lt;a href=&#34;https://stackoverflow.com/a/39784559/7726468&#34;&gt;实现方法&lt;/a&gt;
+我对该方法进行了一些封装,实现了一个帮助包,大家可以尝试一下。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>.Net Core 中的 AOP 原理</title>
+      <link>https://wswind.github.io/posts/aop-in-net/</link>
+      <pubDate>Fri, 28 Feb 2020 17:32:00 +0800</pubDate>
+      <guid>https://wswind.github.io/posts/aop-in-net/</guid>
+      <description>&lt;p&gt;AOP是所有现代OOP语言开发框架中的基础功能，在各类软件开发框架中有着广泛应用。虽然AOP早已不是什么新技术，可知其然还要其所以然。本文将基于.NET环境探讨实现AOP的底层原理。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hyper-V NAT 网络设置固定 IP / DHCP</title>
+      <link>https://wswind.github.io/posts/hyper-v-network/</link>
+      <pubDate>Wed, 12 Jun 2019 09:12:00 +0800</pubDate>
+      <guid>https://wswind.github.io/posts/hyper-v-network/</guid>
+      <description>&lt;p&gt;Hyper-V 默认的 Default Switch 同时支持了 NAT 网络以及 DHCP，虚拟机能够访问外网。
+但使用过程中发现这个 IP 网段经常变化，而且 Hyper-V 没有提供管理其 NAT 网络与 DHCP 的图形化界面功能。
+如果开发者需要同时管理多个 VM，且在局域网中无法为他们单独分配固定 IP 时，使用可自行配置的 NAT 网络显得尤为重要。
+本文提供一种自定义管理 Hyper-V NAT 网络的方法，虚拟机能够通过固定 IP 连接至该网络，且能够访问外网。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Git Server on Linux</title>
+      <link>https://wswind.github.io/posts/git-server-on-linux/</link>
+      <pubDate>Tue, 19 Feb 2019 00:09:38 +0800</pubDate>
+      <guid>https://wswind.github.io/posts/git-server-on-linux/</guid>
+      <description>&lt;p&gt;Git 服务器搭建，如果无需权限控制，仅团队内部使用，初始化一个服务器仓库，其他人通过 ssh 访问这个文件夹即可。具体步骤如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;添加 git-shell&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;which git-shell
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;vim /etc/shells &lt;span class=&#34;c1&#34;&gt;# and add the path to git-shell from last command&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;添加 Git 用户&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;useradd git -m -s git-shell
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;初始化仓库&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mkdir -p /opt/git/repo.git
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git init --bare /opt/git/repo.git
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;chown -R git:git /opt/git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;定制欢迎信息&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git &lt;span class=&#34;nb&#34;&gt;help&lt;/span&gt; shell
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;vim /home/git/git-shell-commands/no-interactive-login
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#!/bin/sh&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;printf&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;%s\n&amp;#39;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Hi &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$USER&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;! You&amp;#39;ve successfully authenticated, but I do not&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;printf&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;%s\n&amp;#39;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;provide interactive shell access.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;exit&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;128&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;验证配置结果&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh -T git@ip
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Hi git! You&lt;span class=&#34;err&#34;&gt;&amp;#39;&lt;/span&gt;ve successfully authenticated, but I &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; not
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;provide interactive shell access.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;Clone 仓库&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone git@git-server:/opt/git/repo.git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参考：https://git-scm.com/book/zh/v2 - 服务器上的git&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
